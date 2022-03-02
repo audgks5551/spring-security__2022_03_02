@@ -28,3 +28,14 @@ spring:
       ddl-auto: create
     #          ddl-auto: none
     database-platform: org.hibernate.dialect.MariaDB53Dialect
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 884447143304-r0jng8kn1msp4kfr21b93ndbq0205ig2.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
