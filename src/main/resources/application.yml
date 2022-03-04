@@ -34,8 +34,11 @@ spring:
       client:
         registration:
           google:
-            client-id: 884447143304-r0jng8kn1msp4kfr21b93ndbq0205ig2.apps.googleusercontent.com
-            client-secret: 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
+            client-id: ENC(LjW/KNmZg24phck4W3+ZUk2FGzi/QxNTmYL2/g0C8P46qImhSbx+1cq4ueAX9MVNjTt3njjuqWiLQvgWV0CH/dM0RDI/VycQjnJ8uJDwOsHR/9eli2p7Ww==)
+            client-secret: ENC(4xdWYyAsZGtzD0WbdCQi8PjLTNffiS3vLFyF8fqL36z9Su/rbhCCkwo+Sj184TqO)
             scope:
               - email
               - profile
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
