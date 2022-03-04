@@ -22,7 +22,7 @@ class JasyptApplicationTests {
 
     public String jasyptEncoding(String value) {
 
-        String key = "kim_yu_rim";
+        String key = "";
         StandardPBEStringEncryptor pbeEnc = new StandardPBEStringEncryptor();
         pbeEnc.setAlgorithm("PBEWithMD5AndDES");
         pbeEnc.setPassword(key);

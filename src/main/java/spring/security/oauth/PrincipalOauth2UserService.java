@@ -47,7 +47,10 @@ public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
         } else if (userRequest.getClientRegistration().getRegistrationId().equals("naver")) {
             System.out.println("네이버 로그인 요청");
             oauth2UserInfo = new NaverUserInfo((Map)oauth2User.getAttributes().get("response"));
-        }else {
+        } else if (userRequest.getClientRegistration().getRegistrationId().equals("kakao")) {
+            System.out.println(" 카카오 로그인 요청");
+            oauth2UserInfo = new NaverUserInfo((Map)oauth2User.getAttributes());
+        } else {
             System.out.println("구글, 페이스북, 네이버만 지원함");
         }
 
